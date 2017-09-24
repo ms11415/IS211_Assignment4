@@ -5,8 +5,6 @@
 import random
 import time
 
-test_list = random.sample(xrange(10),10)
-
 def list_generate(xrange_size, list_size):
     """Generates a single random list for test data.
 
