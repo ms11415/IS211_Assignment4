@@ -126,12 +126,12 @@ def binary_search_recursive(a_list, item):
 
     if len(a_list) == 0:
         end = time.time()
-        return False, start-end
+        return False, (end - start)
     else:
         midpoint = len(a_list) // 2
     if a_list[midpoint] == item:
         end = time.time()
-        return True, start-end
+        return True, (end - start)
     else:
         if item < a_list[midpoint]:
             return binary_search_recursive(a_list[:midpoint], item)
